@@ -1,6 +1,17 @@
 # Prerequisites
 *.d
 
+# Ignore build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ebug_with_Libslirp/
+[Rr]elease/
+[Rr]eleases/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
 # Object files
 *.o
 *.ko
@@ -18,7 +29,6 @@
 
 # Libraries
 *.lib
-*.a
 *.la
 *.lo
 
@@ -35,12 +45,49 @@
 *.i*86
 *.x86_64
 *.hex
+*.bin
+*.elf
+*.rom
+
+# CodeWarrior temporary files
+*.tdt
+CWSettingsWindows.stg
+
+# Visual Studio cache/options directory
+.vs/
+
+# Visual Studio Solution / project User Option files
+*.suo
+*.vcxproj.user
+
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
+
+# Ignore certificate files.
+*.pem
+*.crt
+
+# Ignore Visual Studio user files
+*.suo
+*.vcxproj.user
+
+# Atmel Studio user files
+*.atsuo
+
+# STM32CubeIDE
+*.launch
 
 # Debug files
 *.dSYM/
 *.su
 *.idb
 *.pdb
+
+# Image Files
+*.png
+*.jpg
+*.jpeg
 
 # Kernel Module Compile Results
 *.mod*
@@ -50,6 +97,3 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-
-# debug information files
-*.dwo
